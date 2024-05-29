@@ -18,6 +18,7 @@ High level website layout:
     -Contact Me
   Work Experience / Resume:
     -My Resume
+    -Make each job description expandable with "show more" button
   Education / Skills:
     -Computer science bachelors
     -My programming skills
