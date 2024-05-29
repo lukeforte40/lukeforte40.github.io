@@ -10,6 +10,7 @@ High level website layout:
   Home: 
     -An overview of each of the other pages with the oppertunity to read more.
   About Me:
+    -General
     -Snowboarder
     -Computer programmer
     -Adventurer
@@ -19,7 +20,7 @@ High level website layout:
   Education / Skills:
     -Computer science bachelors
     -My programming skills
-    -My other skills
+    -My certifications
   My Projects / Major Contributions:
     -Add a showcase of projects.
     -First up is completed projects
