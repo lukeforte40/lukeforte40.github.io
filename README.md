@@ -15,6 +15,7 @@ High level website layout:
     -Computer programmer
     -Adventurer
     -Learner (sciences, technology, history)
+    -Contact Me
   Work Experience / Resume:
     -My Resume
   Education / Skills:
