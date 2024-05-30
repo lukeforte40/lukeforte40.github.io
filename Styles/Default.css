@@ -1,6 +1,27 @@
+/* Default Settings */
+body {
+    margin: 0;
+}
 /* Nav Bar */
 nav {
+    position: sticky;
+    display: flex;
     width: 100%;
     height: auto;
     background-color: grey;
+}
+nav a {
+    width: 25%;
+    margin: 0;
+    text-decoration: none;
+}
+nav a p {
+    margin: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: black;    
+}
+nav a:hover {
+    border: 2px solid black;
 }
