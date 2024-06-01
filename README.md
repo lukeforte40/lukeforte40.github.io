@@ -6,6 +6,7 @@ Description:
   Something that can portray my skills, and showcase what I can do as a programmer, and a person.
 Design descions to make:
   Do I want a single webpage that is continuos / Do i want multiple webpages and partitions?
+    Single Page
 High level website layout:
   Home: 
     -An overview of each of the other pages with the oppertunity to read more.
