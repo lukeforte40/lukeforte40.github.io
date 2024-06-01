@@ -8,6 +8,7 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 0;
+    overflow: hidden;
 }
 nav h1{
     font-size: 23rem;
