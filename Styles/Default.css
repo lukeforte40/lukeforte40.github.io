@@ -1,8 +1,14 @@
 /* Default Settings */
-body{
+* {
     margin: 0;
+    padding: 0;
 }
-#homeContainer, #aboutContainer, #resumeContainer, #skillsAndEducationContainer, #projectsContainer{
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#aboutContainer, #resumeContainer, #skillsAndEducationContainer, #projectsContainer {
     display: none;
 }
 /* Nav Bar */

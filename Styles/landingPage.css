@@ -1,20 +1,31 @@
 nav{
     display: flex;
-    width: 100vw;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 101vw;
     height: 100vh;
     background: rgb(2,0,36);
     background: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(154,154,154,1) 50%, rgba(255,255,255,1) 100%);
     background-image: url('../Images/IMG_2594.JPG');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 0;
+    background-position: 50%;
 }
 nav h1{
-    font-size: 23rem;
+    font-size: 7em;
     margin: 0;
     text-align: center;
+    font-family: cursive;
 }
-
+#homeContainer{
+    position: absolute;
+    top: 20vh;
+}
 /* Media Queries (Tablet) */
 
 /* Media Queries (Laptop/ Desktop) */
+@media only screen and (min-width:1800px) {
+    nav{
+        background-position: 85%;
+    }
+}
