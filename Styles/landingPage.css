@@ -1,8 +1,11 @@
-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 101vw;
+/* Fonts */
+@font-face {
+    font-family: 'indieFlower';
+    src: url('../Fonts/IndieFlower-Regular.ttf');
+}
+/* styles */
+#landingPage{
+    width: 100vw;
     height: 100vh;
     background: rgb(2,0,36);
     background: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(154,154,154,1) 50%, rgba(255,255,255,1) 100%);
@@ -10,22 +13,30 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+    cursor: pointer;
 }
-nav h1{
-    font-size: 7em;
+#fullName{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#fullName h1{
+    font-size: 6em;
     margin: 0;
     text-align: center;
-    font-family: cursive;
+    font-family: 'indieFlower', cursive;
+    width: 100vw;
+    background-color: #0000007a;
+    color: #b5b5b5;
+    letter-spacing: .6rem;
 }
-#homeContainer{
-    position: absolute;
-    top: 20vh;
-}
-/* Media Queries (Tablet) */
-
 /* Media Queries (Laptop/ Desktop) */
 @media only screen and (min-width:1800px) {
-    nav{
-        background-position: 85%;
+    #fullName h1{
+        font-size: 8em;
     }
 }
