@@ -1,7 +1,8 @@
 nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 1fr;
+    align-content: space-between;
     width: 101vw;
     height: 100vh;
     background: rgb(2,0,36);
@@ -17,9 +18,25 @@ nav h1{
     text-align: center;
     font-family: cursive;
 }
+#last{
+    align-self: flex-end;
+}
 #homeContainer{
-    position: absolute;
-    top: 20vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+#homeContianer > div{
+    padding: 3vh 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr;
+}
+#homeContainer div:nth-child(2), #homeContainer div:nth-child(3), #homeContainer div:nth-child(4){
+    display: none;
+}
+#homeContainer > div > h2{
+    text-align: center;
 }
 /* Media Queries (Tablet) */
 
