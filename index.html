@@ -18,87 +18,94 @@
         </div>
         <div id="homeContainer">
             <div id="aboutButtonContainer" class="buttonContainer">
-                <h2>About Me</h2>
-                <div id="General">
-                    <h2>A General Overview</h2>
-                    <p>
-                        In September of 1998 I was born durring a hurricane. After 2 weeks I was allowed to fly
+                <div class="container">
+                    <h2>About Me</h2>
+                    <p>In September of 1998 I was born durring a hurricane. After 2 weeks I was allowed to fly
                         home from Florida, with my new parents, where I grew up with a little brother. From a
                         young age I had a strong facination with the sciences and technology. Taking apart anything
                         I could get my hands on, from remote control cars, to playing on my grandmas computer, and making basic
                         web pages. My strong suit all throughout school was the sciences and math. I also played 
                         lacrosse and football at Fair lawn High School throughout elementary and middle school.
                         In middle school I would learn how to snowboard, leading me to move to Colorado from the age of 22 - 25.
-                        I love to learn about new and interesting topics and I love to explore; always looking for a new adventure.
-                    </p>
+                        I love to learn about new and interesting topics and I love to explore; always looking for a new adventure.</p>
+                    <button class="showMore" id="aboutButton" onclick="openAbout()">Read More</button>
                 </div>        
-                <button class="showMore" id="aboutButton" onclick="openAbout()">Read More</button>
             </div>
             <div id="resumeButtonContainer" class="buttonContainer">
-                <h2>Work Experience</h2>
-                <div id="ChristySports">
-                    <div id="jobTitle">
-                        <h2>Snowboard Salesman</h2>
+                <div class="container">
+                    <h2>Work Experience</h2>
+                    <div id="ChristySports">
+                        <div id="jobTitle">
+                            <h2>Snowboard Salesman</h2>
+                        </div>
+                        <div id="Location">
+                            <p>Christy Sports - Dillon, CO</p>
+                        </div>
+                        <div id="EmploymentDate">
+                            <p>December 2023 to April 2024</p>
+                        </div>
+                        <div id="jobDescription">
+                            <p>Job Description:</p>
+                            <ul>
+                                <li>Leverage skills in microsoft office programs to set up sales, and make visually appealing, informative tags.</li>
+                                <li>Managed the unpackaging, and transfers of items into and out of the store.</li>
+                                <li>Built Displays to showcase new items.</li>
+                                <li>Assisted in other departments due to staffing issues.</li>
+                                <li>Addressed issues with warranty, and customer dissatisfaction.</li>
+                                <li>Provided insights into tuning and best practices for gear maintenance.</li>
+                                <li>Stocked, and kept inventory accurate for snowboard gear, helmets, and goggles.</li>
+                                <li>Discussed and provided information on technical specifications on a variety of equipment.</li>
+                                <li>Curated snowboard, boots and bindings for customers based on their preferences.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div id="Location">
-                        <p>Christy Sports - Dillon, CO</p>
-                    </div>
-                    <div id="EmploymentDate">
-                        <p>December 2023 to April 2024</p>
-                    </div>
-                    <div id="jobDescription">
-                        <p>Job Description:</p>
-                        <ul>
-                            <li>Leverage skills in microsoft office programs to set up sales, and make visually appealing, informative tags.</li>
-                            <li>Managed the unpackaging, and transfers of items into and out of the store.</li>
-                            <li>Built Displays to showcase new items.</li>
-                            <li>Assisted in other departments due to staffing issues.</li>
-                            <li>Addressed issues with warranty, and customer dissatisfaction.</li>
-                            <li>Provided insights into tuning and best practices for gear maintenance.</li>
-                            <li>Stocked, and kept inventory accurate for snowboard gear, helmets, and goggles.</li>
-                            <li>Discussed and provided information on technical specifications on a variety of equipment.</li>
-                            <li>Curated snowboard, boots and bindings for customers based on their preferences.</li>
-                        </ul>
-                    </div>
+                    <button class="showMore" id="resumeButton" onclick="openResume()">Read More</button>
                 </div>
-                <button class="showMore" id="resumeButton" onclick="openResume()">Read More</button>
             </div>
             <div id="skillsButtonContainer" class="buttonContainer">
-                <h2>Skills</h2>
-                <h3>Computer Science</h3>
-                <ul>
-                    <li>Javascript (5+ Years)</li>
-                    <li>Python (5+ Years)</li>
-                    <li>Html5 (5+ Years)</li>
-                    <li>Front End (5+ Years)</li>
-                    <li>Css3 (5+ Years)</li>
-                    <li>Sql (3+ Years)</li>
-                    <li>Full Stack (3+ Years)</li>
-                    <li>PostgreSQL (3+ Years)</li>
-                    <li>Git (5+ Years)</li>
-                    <li>MySQL (3+ years)</li>
-                    <li>AWS (Less than 1 Year)</li>
-                    <li>Linux (5+ Years)</li>
-                    <li>C/C++ (Less than 1 Year)</li>
-                    <li>User Interface (UI) (5+ Years)</li>
-                </ul>
-                <button class="showMore" id="skillsButton" onclick="openSkills()">Read More</button>
+                <div class="container">
+                    <h2>Skills</h2>
+                    <h3>Computer Science</h3>
+                    <ul>
+                        <li>Javascript (5+ Years)</li>
+                        <li>Python (5+ Years)</li>
+                        <li>Html5 (5+ Years)</li>
+                        <li>Front End (5+ Years)</li>
+                        <li>Css3 (5+ Years)</li>
+                        <li>Sql (3+ Years)</li>
+                        <li>Full Stack (3+ Years)</li>
+                        <li>PostgreSQL (3+ Years)</li>
+                        <li>Git (5+ Years)</li>
+                        <li>MySQL (3+ years)</li>
+                        <li>AWS (Less than 1 Year)</li>
+                        <li>Linux (5+ Years)</li>
+                        <li>C/C++ (Less than 1 Year)</li>
+                        <li>User Interface (UI) (5+ Years)</li>
+                    </ul>
+                    <button class="showMore" id="skillsButton" onclick="openSkills()">Read More</button>
+                </div>
             </div>
             <div id="projectsButtonContainer" class="buttonContainer">
-                <h2>My Projects and Contributions</h2>
-                <h2>My Portfolio</h2>
-                <p>Start date: May, 2024</p>
-                <p>Language(s): Htlm5, Css3</p>
-                <a href="https://github.com/lukeforte40/lukeforte40.github.io" target="_blank"><p>Source Code</p></a>
-                <p>This Website.</p>
-                <p>Project overview:</p>
-                <p>This website is to provide my resume, skills, and certifications. It showcases my current, previous,
-                    and major projects, and provides a window to show who I am as a person and an employee.</p>
-                <p>What I Learned:</p>
-                <p>This website refreshed my memory on building websites, and working on front end web development.
-                    This project was made to help me build my skills in html5, Css3, Javascript, and my writing skills.</p>
-                <button class="showMore" id="skillsButton" onclick="openSkills()">Read More</button>
+                <div class="container">
+                    <h2>My Projects and Contributions</h2>
+                    <h2>My Portfolio</h2>
+                    <p>Start date: May, 2024</p>
+                    <p>Language(s): Htlm5, Css3</p>
+                    <a href="https://github.com/lukeforte40/lukeforte40.github.io" target="_blank"><p>Source Code</p></a>
+                    <p>This Website.</p>
+                    <p>Project overview:</p>
+                    <p>This website is to provide my resume, skills, and certifications. It showcases my current, previous,
+                        and major projects, and provides a window to show who I am as a person and an employee.</p>
+                    <p>What I Learned:</p>
+                    <p>This website refreshed my memory on building websites, and working on front end web development.
+                        This project was made to help me build my skills in html5, Css3, Javascript, and my writing skills.</p>
+                    <button class="showMore" id="skillsButton" onclick="openSkills()">Read More</button>
+                </div>
             </div>
+            <nav id="nav">
+                <h2 id="leftArrow" class="arrow" onclick="next()">&lt;</h2>
+                <h2 id="rightArrow" class="arrow" onclick="prev()">&gt;</h2>
+            </nav>    
         </div>
         <div id="aboutContainer">
             <h1>About Me</h1>

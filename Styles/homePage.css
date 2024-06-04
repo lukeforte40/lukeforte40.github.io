@@ -1,3 +1,15 @@
+/* Animations */
+@keyframes show {
+    0% {
+      filter: blur(5px);
+      transform: translateY(calc(-50% + 75px));
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+}
+/* Styles */
 #homeContainer{
     background-color: white;
     width: 100vw;
@@ -5,9 +17,9 @@
 }
 .buttonContainer{
     width: 200px;
-    height: 300px;
+    height: 250px;
     position: absolute;
-    top: 50%;
+    top: 20%;
     transform: translateY(-50%);
     z-index: 1;
     background-position: center;
@@ -16,7 +28,7 @@
     box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
     transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
 }
-.buttonContainer:nth-child(1), .buttonContainer:nth-child(2) {
+.buttonContainer:nth-child(1){
     left: 0;
     top: 0;
     width: 100%;
@@ -26,11 +38,84 @@
     box-shadow: none;
     opacity: 1;
 }
-.buttonContainer:nth-child(3) {
+.buttonContainer:nth-child(2){
     left: 50%;
-}
-.buttonContainer:nth-child(4) { 
-    left: calc(50% + 220px); 
-}
-    
 
+}
+.buttonContainer:nth-child(3){
+    left: calc(50% + 220px); 
+
+}
+.buttonContainer:nth-child(4){ 
+    left: calc(50% + 440px); 
+}
+.container{
+    width: min(30vw, 400px);
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    transform: translateY(-50%);
+    opacity: 0;
+    display: none;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 20px;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+.container h2{
+    margin: 0 auto 10px;
+}
+.container p{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 0;
+    border-radius: 10px;
+    font-size: 1.05rem;
+}
+.showMore{
+    width: fit-content;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    margin: 10px auto 0;
+}
+.buttonContainer:nth-child(1) .container{
+    display: flex;
+    animation: show 0.75s ease-in-out 0.3s forwards;
+}
+nav{
+    flex-direction: row;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    user-select: none;
+}
+.arrow{
+    background-color: rgba(255,255,255,0.5);
+    color: rgba(0,0,0,0.7);
+    border: 2px solid rgba(0,0,0,0.6);
+    margin: 0 0.25rem;
+    padding: 30%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.arrow:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+#aboutButtonContainer{
+    background-image:url("../Images/IMG_3406.JPG");
+}
+#resumeButtonContainer{
+    background-image: url("../Images/IMG_1939.JPG");
+}
+#skillsButtonContainer{
+    background-image: url("../Images/IMG_7480.JPG");
+}
+#projectsButtonContainer{
+    background-image: url("../Images/IMG_4450.JPG");
+}
