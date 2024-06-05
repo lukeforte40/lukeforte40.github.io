@@ -19,16 +19,18 @@
     width: 200px;
     height: 250px;
     position: absolute;
-    top: 20%;
-    transform: translateY(-50%);
-    z-index: 1;
+    z-index: 2;
     background-position: center;
     background-size: cover;
     border-radius: 20px;
     box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
-    transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+    transition: transform 3s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    transform: translateX(-50%);
+    top: 1%;
 }
-.buttonContainer:nth-child(1){
+#aboutButtonContainer{
     left: 0;
     top: 0;
     width: 100%;
@@ -36,25 +38,25 @@
     transform: none;
     border-radius: 0;
     box-shadow: none;
-    opacity: 1;
+    z-index: 1;
 }
-.buttonContainer:nth-child(2){
-    left: 50%;
-
+#resumeButtonContainer{
+    left: 25%;
+    cursor: pointer;
 }
-.buttonContainer:nth-child(3){
-    left: calc(50% + 220px); 
-
+#skillsButtonContainer{
+    left: 50%; 
+    cursor: pointer;
 }
-.buttonContainer:nth-child(4){ 
-    left: calc(50% + 440px); 
+#projectsButtonContainer{ 
+    left: 75%;
+    cursor: pointer; 
 }
 .container{
     width: min(30vw, 400px);
     position: absolute;
-    top: 50%;
+    bottom: 0;
     left: 3rem;
-    transform: translateY(-50%);
     opacity: 0;
     display: none;
     background-color: rgba(255,255,255,0.4);
@@ -62,15 +64,18 @@
     padding: 20px;
     flex-direction: column;
     text-align: center;
+    animation: show 2s ease-in-out 0.75s forwards;
+    animation-delay: 3s;
 }
 .container h2{
     margin: 0 auto 10px;
 }
-.container p{
+.container p, .container ul{
     background-color: rgba(255, 255, 255, 0.6);
     padding: 5px 0;
     border-radius: 10px;
     font-size: 1.05rem;
+    list-style: none;
 }
 .showMore{
     width: fit-content;
@@ -82,9 +87,8 @@
     cursor: pointer;
     margin: 10px auto 0;
 }
-.buttonContainer:nth-child(1) .container{
+#aboutButtonContainer .container{
     display: flex;
-    animation: show 0.75s ease-in-out 0.3s forwards;
 }
 nav{
     flex-direction: row;
@@ -118,4 +122,20 @@ nav{
 }
 #projectsButtonContainer{
     background-image: url("../Images/IMG_4450.JPG");
+}
+/* Media Queries */
+@media only screen and (min-width: 650px) and (max-width: 900px){
+    .container h2{
+        font-size: 1rem;
+    }
+    .container p{
+        font-size: 0.7rem;
+    }
+    #showMore{
+        font-size: 0.7rem;
+    }    
+    .buttonContainer{
+        width: 160px;
+        height: 180px;
+    }
 }
