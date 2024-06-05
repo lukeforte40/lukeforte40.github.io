@@ -16,7 +16,7 @@
     var skillsButton = document.getElementById("skillsButton");
     var projectsButton = document.getElementById("projectsButton");
 // Event Listeners
-    landingPage.addEventListener("click", openHomePage);
+    landingPage.addEventListener("click", function(){open('home')});
     about.addEventListener("click", function(){show('about')});
     resume.addEventListener("click", function(){show('resume')});
     skills.addEventListener("click", function(){show('skills')});
@@ -26,15 +26,6 @@
     skillsButton.addEventListener("click", function(){open('skills')});
     projectsButton.addEventListener("click", function(){open('projects')});
 // functions
-    function openHomePage(){
-        document.getElementById('landingPage').style.display = "none";
-        document.getElementById('homeContainer').style.display = "grid";
-        var buttonContainerArr = document.getElementsByClassName('buttonContainer');
-        var arrayLength = buttonContainerArr.length;
-        for (var i=0; i<arrayLength; i++) {
-            buttonContainerArr[i].style.display = "grid";
-        }
-    };
     function show(conatiner){
         if (conatiner != currentPage) {
             // reset conatiners
@@ -52,7 +43,8 @@
                 }
                 arrayLength = allContainers.length;
                 for (let i = 0; i < arrayLength; i++) {
-                    allContainers[i].style.display = "none";            
+                    allContainers[i].style.display = "none";
+                    allContainers[i].style.animationDelay = "3s";            
                 }
             // activate conatiner
             switch (conatiner) {
@@ -130,5 +122,17 @@
         }
     };
     function open(conatiner){
-
+        var mainContainer = document.getElementsByClassName('mainContainer');
+        var arrayLength = mainContainer.length;
+        for (var i = 0; i < arrayLength; i++) {
+            mainContainer[i].style.display = "none";
+        }
+        if (conatiner == 'home'){
+            var buttonContainerArr = document.getElementsByClassName('buttonContainer');
+            var arrayLength = buttonContainerArr.length;
+            for (var i=0; i<arrayLength; i++) {
+                buttonContainerArr[i].style.display = "grid";
+            }
+        }
+        document.getElementById( conatiner + 'Container').style.display = "grid";
     };

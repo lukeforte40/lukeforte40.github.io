@@ -65,7 +65,6 @@
     flex-direction: column;
     text-align: center;
     animation: show 2s ease-in-out 0.75s forwards;
-    animation-delay: 3s;
 }
 .container h2{
     margin: 0 auto 10px;

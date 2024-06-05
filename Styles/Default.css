@@ -9,6 +9,6 @@ html, body {
     overflow: hidden;
     background-color: black;
 }
-#aboutContainer, #resumeContainer, #skillsAndEducationContainer, #projectsContainer, nav, .buttonContainer {
+#aboutContainer, #resumeContainer, #skillsContainer, #projectsContainer, nav, .buttonContainer {
     display: none;
 }
