@@ -1,0 +1,66 @@
+/* temp */
+#landingPage, #homeContainer{
+    display: none;
+}
+/* Styles */
+#skillsContainer{
+    display: grid;
+    background-color: #594f4f;
+    width: 100%;
+    align-content: center;
+}
+#skillsContainer h1{
+    text-align: center;
+    text-justify: auto;
+}
+#skillsContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+}
+#skillsContent div h2{
+    text-align: center;
+}
+#skillsContent div h3{
+    text-align: center;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 5px;
+    overflow-y: scroll;
+    height: 38%;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+ul::-webkit-scrollbar{
+    display: none;
+}
+li{
+    text-align: center;
+    padding: 0.1rem 0;
+    background-color: #384f54;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    z-index: 1;
+    padding: 2px;
+}
+.slider{
+    position: absolute;
+    min-width: 20%;
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #9de0ad;
+    z-index: -1;
+}
