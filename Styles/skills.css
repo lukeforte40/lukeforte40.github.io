@@ -1,15 +1,11 @@
-/* temp */
-#landingPage, #homeContainer{
-    display: none;
-}
-#skillsContainer{
-    display: grid;
-}
 /* Styles */
 #skillsContainer{
     background-color: #594f4f;
     width: 100%;
+    height: 100%;
     align-content: center;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: auto;
 }
 #skillsContainer h1{
     text-align: center;
@@ -18,14 +14,13 @@
 #skillsContent{
     display: grid;
     justify-content: space-evenly;
-    height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
 }
 #skillsContent div h2{
     text-align: center;
     width: 33vw;
 }
-#skillsContent div h3{
+#skillsContent div div h3{
     text-align: center;
 }
 ul{
@@ -37,10 +32,6 @@ ul{
     overflow-x: hidden;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-}
-#skillsContainer ul{
-    height: 88%;
-    width: 80%;
 }
 ul::-webkit-scrollbar{
     display: none;
@@ -62,14 +53,143 @@ li{
 .slider{
     position: absolute;
     min-width: 20%;
-    width: 50%;
     height: 100%;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     background-color: #9de0ad;
     z-index: -1;
 }
-#skillsSubcontainer{
-    display: grid;
-    justify-items: center;
+#skillsSubcontainer, #educationContainer, #certificationsContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+#skillsSubcontainer::-webkit-scrollbar{
+    display: none;
+}
+#skillsSubcontainer h3{
+    margin-bottom: 5px;
+}
+#educationContainer::-webkit-scrollbar{
+    display: none;
+}
+#certificationsContainer::-webkit-scrollbar{
+    display: none;
+}
+#skillsSubcontainer > div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(94, 127, 155);
+    height: 50%;
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+#educationContainer div, #certificationsContainer div{
+    background-color: rgb(94, 127, 155);
+    padding: 20px;
+    width: 80%;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+#skillsSubcontainer div h3, #educationContainer div h3, #certificationsContainer div h3{
+    padding-bottom: 5px;
+} 
+#skillsSubcontainer div ul{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+#skillsSubcontainer div ul li{
+    text-align: left;
+    background-color: #384f54;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+/* Skills percent bars */
+#javascript{
+    width: 50%;
+}
+#python{
+    width: 60%;
+}
+#html{
+    width: 90%;
+}
+#frontEnd{
+    width: 75%;
+}
+#css{
+    width: 50%;
+}
+#sql{
+    width: 30%;
+}
+#fullStack{
+    width: 40%;
+}
+#git{
+    width: 75%;
+}
+#mySQL{
+    width: 30%;
+}
+#linux{
+    width: 50%;
+}
+#cpp{
+    width: 50%;
+}
+#ui{
+    width: 75%;
+}
+#snowboarding{
+    width: 90%;
+}
+#camping{
+    width: 75%;
+}
+#wayfinding{
+    width: 60%;
+}
+#cashHandling{
+    width: 100%;
+}
+#resturantExperience{
+    width: 90%;
+}
+#pos{
+    width: 80%;
+}
+#bartending{
+    width: 75%;
+}
+#waiter{
+    width: 90%;
+}
+#custService{
+    width: 100%;
+}
+#invManagement{
+    width: 90%;
+}
+#management{
+    width: 80%;
+}
+#quickThinking{
+    width: 100%;
+}
+#adaptability{
+    width: 80%;
+}
+#communication{
+    width: 100%;
 }
