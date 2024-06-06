@@ -2,9 +2,11 @@
 #landingPage, #homeContainer{
     display: none;
 }
-/* Styles */
 #skillsContainer{
     display: grid;
+}
+/* Styles */
+#skillsContainer{
     background-color: #594f4f;
     width: 100%;
     align-content: center;
@@ -14,13 +16,14 @@
     text-justify: auto;
 }
 #skillsContent{
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: space-evenly;
     height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 #skillsContent div h2{
     text-align: center;
+    width: 33vw;
 }
 #skillsContent div h3{
     text-align: center;
@@ -31,17 +34,19 @@ ul{
     list-style: none;
     margin: 5px;
     overflow-y: scroll;
-    height: 38%;
     overflow-x: hidden;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+#skillsContainer ul{
+    height: 88%;
+    width: 80%;
 }
 ul::-webkit-scrollbar{
     display: none;
 }
 li{
     text-align: center;
-    padding: 0.1rem 0;
     background-color: #384f54;
     height: 100%;
     position: relative;
@@ -63,4 +68,8 @@ li{
     border-bottom-right-radius: 100px;
     background-color: #9de0ad;
     z-index: -1;
+}
+#skillsSubcontainer{
+    display: grid;
+    justify-items: center;
 }

@@ -15,6 +15,12 @@
     width: 100vw;
     height: 100vh;
 }
+#homeContainer ul li{
+    background-color: #00000000;
+}
+#homePageSlider{
+    height: 80%;
+}
 .buttonContainer{
     width: 200px;
     height: 250px;
@@ -39,6 +45,9 @@
     border-radius: 0;
     box-shadow: none;
     z-index: 1;
+}
+#aboutButtonContainer p{
+    overflow-y: scroll;
 }
 #resumeButtonContainer{
     left: 25%;
@@ -65,14 +74,17 @@
     flex-direction: column;
     text-align: center;
     animation: show 2s ease-in-out 0.75s forwards;
+    height: 55%;
+    justify-content: space-between;
 }
-.container h2{
-    margin: 0 auto 10px;
-}
-.container p, .container ul{
+.container p{
     background-color: rgba(255, 255, 255, 0.6);
     padding: 5px 0;
     border-radius: 10px;
+    font-size: 1.05rem;
+}
+.container ul{
+    background-color: rgba(255, 255, 255, 0.6);
     font-size: 1.05rem;
     list-style: none;
 }
