@@ -15,8 +15,23 @@
     width: 100vw;
     height: 100vh;
 }
+#homeContainer ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 #homeContainer ul li{
     background-color: #00000000;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
 }
 #homePageSlider{
     height: 80%;

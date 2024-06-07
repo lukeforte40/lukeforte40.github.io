@@ -25,6 +25,7 @@
     resumeButton.addEventListener("click", function(){open('resume')});
     skillsButton.addEventListener("click", function(){open('skills')});
     projectsButton.addEventListener("click", function(){open('projects')});
+    document.getElementById('back').addEventListener("click", function(){open('home')});
 // functions
     function show(conatiner){
         if (conatiner != currentPage) {
@@ -122,6 +123,7 @@
         }
     };
     function open(conatiner){
+        document.getElementById('back').style.display = 'block';
         var mainContainer = document.getElementsByClassName('mainContainer');
         var arrayLength = mainContainer.length;
         for (var i = 0; i < arrayLength; i++) {
@@ -132,7 +134,9 @@
             var arrayLength = buttonContainerArr.length;
             for (var i=0; i<arrayLength; i++) {
                 buttonContainerArr[i].style.display = "grid";
+                allContainers[i].style.animationDelay = "0s";            
             }
+            document.getElementById('back').style.display = 'none';
         }
         document.getElementById( conatiner + 'Container').style.display = "grid";
     };
