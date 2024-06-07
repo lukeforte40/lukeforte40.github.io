@@ -29,7 +29,7 @@
 }
 #aboutContainer > div ul{
     background-color: grey;
-    list-style: disc;
+    list-style: none;
     margin: 0 5%;
     width: 90%;
 }
