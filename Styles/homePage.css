@@ -13,7 +13,7 @@
 #homeContainer{
     background-color: white;
     width: 100vw;
-    height: 100vh;
+    height: 100vh;    
 }
 #homeContainer ul{
     display: flex;
@@ -37,18 +37,17 @@
     height: 80%;
 }
 .buttonContainer{
-    width: 200px;
-    height: 250px;
+    width: 30%;
+    height: 35%;
     position: absolute;
     z-index: 2;
     background-position: center;
     background-size: cover;
     border-radius: 20px;
     box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
-    transition: transform 3s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+    transition: left 2.5s, top 2.5s, width 2.5s, height 2.5s;
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
-    transform: translateX(-50%);
     top: 1%;
 }
 #aboutButtonContainer{
@@ -65,19 +64,19 @@
     overflow-y: scroll;
 }
 #resumeButtonContainer{
-    left: 25%;
+    left: 2.5%;
     cursor: pointer;
 }
 #skillsButtonContainer{
-    left: 50%; 
+    left: 35%; 
     cursor: pointer;
 }
 #projectsButtonContainer{ 
-    left: 75%;
+    left: 67.5%;
     cursor: pointer; 
 }
 .container{
-    width: min(30vw, 400px);
+    width: 40%;
     position: absolute;
     bottom: 0;
     left: 3rem;

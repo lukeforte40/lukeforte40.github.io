@@ -34,9 +34,8 @@
                 for (var i = 0; i < arrayLength; i++) {
                     allButtonContainers[i].style.top = "1%";
                     // set width and height based on screen size
-                    allButtonContainers[i].style.width = "200px";
-                    allButtonContainers[i].style.height = "250px";
-                    allButtonContainers[i].style.transform = "translateX(-50%)";
+                    allButtonContainers[i].style.width = "30%";
+                    allButtonContainers[i].style.height = "35%";
                     allButtonContainers[i].style.borderRadius = "20px";
                     allButtonContainers[i].style.boxShadow = "0 20px 30px rgba(255,255,255,0.3) inset";
                     allButtonContainers[i].style.cursor = "pointer";
@@ -62,9 +61,9 @@
                     about.style.cursor = "default";
                     aboutContainer[0].style.display = "flex";
                     aboutContainer[0].style.cursor = "default";
-                    resume.style.left = "25%";
-                    skills.style.left = "50%";
-                    projects.style.left = "75%";
+                    resume.style.left = "2.5%";
+                    skills.style.left = "35%";
+                    projects.style.left = "67.5%";
                     break;
                 case 'resume':
                     currentPage = 'resume';
@@ -79,9 +78,9 @@
                     resume.style.cursor = "default";
                     resumeContainer[0].style.display = "flex";
                     resumeContainer[0].style.cursor = "default";
-                    about.style.left = "25%";
-                    skills.style.left = "50%";
-                    projects.style.left = "75%";
+                    about.style.left = "2.5%";
+                    skills.style.left = "35%";
+                    projects.style.left = "67.5%";
                     break;
                 case "skills":
                     currentPage = 'skills';
@@ -96,9 +95,9 @@
                     skills.style.cursor = "default";
                     skillsContainer[0].style.display = "flex";
                     skillsContainer[0].style.cursor = "default";
-                    about.style.left = "25%";
-                    resume.style.left = "50%";
-                    projects.style.left = "75%";
+                    about.style.left = "2.5%";
+                    resume.style.left = "35%";
+                    projects.style.left = "67.5%";
                     break;
                 case "projects":
                     currentPage = 'projects';
@@ -113,9 +112,9 @@
                     projects.style.cursor = "default";
                     projectsContainer[0].style.display = "flex";
                     projectsContainer[0].style.cursor = "default";
-                    about.style.left = "25%";
-                    resume.style.left = "50%";
-                    skills.style.left = "75%";
+                    about.style.left = "2.5%";
+                    resume.style.left = "35%";
+                    skills.style.left = "67.5%";
                     break;
                 default:
                     break;
