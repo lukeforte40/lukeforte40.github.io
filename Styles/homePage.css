@@ -25,7 +25,9 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
-
+#projectsButtonContainer > div > div{
+    overflow-y: scroll;
+}
 #homeContainer ul li{
     background-color: #00000000;
     text-align: center;
