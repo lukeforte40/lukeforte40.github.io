@@ -14,11 +14,13 @@
 #skillsContent{
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 28.33% 28.33% 28.33%;
 }
 #skillsContent div h2{
     text-align: center;
-    width: 33vw;
+    width: 100%;
+    font-size: 1.25em;
+
 }
 #skillsContent div div h3{
     text-align: center;
@@ -63,7 +65,7 @@ ul::-webkit-scrollbar{
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin: 0 5px;
+    margin: 0 2.5%;
     align-items: center;
     overflow-y: scroll;
     overflow-x: hidden;
