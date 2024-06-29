@@ -10,6 +10,7 @@
     var projectsContainer = document.querySelectorAll("#projectsButtonContainer .container");
     var allContainers = document.getElementsByClassName("container");
     var allButtonContainers = document.getElementsByClassName("buttonContainer");
+    var titles = document.getElementsByClassName("title");
     var landingPage = document.getElementById("landingPage");
     var aboutButton = document.getElementById("aboutButton");
     var resumeButton = document.getElementById("resumeButton");
@@ -40,9 +41,7 @@
                     allButtonContainers[i].style.boxShadow = "0 20px 30px rgba(255,255,255,0.3) inset";
                     allButtonContainers[i].style.cursor = "pointer";
                     allButtonContainers[i].style.zIndex = "2";
-                }
-                arrayLength = allContainers.length;
-                for (let i = 0; i < arrayLength; i++) {
+                    titles[i].style.display = "block";
                     allContainers[i].style.display = "none";
                     allContainers[i].style.animationDelay = "3s";            
                 }
@@ -64,6 +63,7 @@
                     resume.style.left = "2.5%";
                     skills.style.left = "35%";
                     projects.style.left = "67.5%";
+                    titles[0].style.display = "none";
                     break;
                 case 'resume':
                     currentPage = 'resume';
@@ -81,6 +81,7 @@
                     about.style.left = "2.5%";
                     skills.style.left = "35%";
                     projects.style.left = "67.5%";
+                    titles[1].style.display = "none";
                     break;
                 case "skills":
                     currentPage = 'skills';
@@ -98,6 +99,7 @@
                     about.style.left = "2.5%";
                     resume.style.left = "35%";
                     projects.style.left = "67.5%";
+                    titles[2].style.display = "none";
                     break;
                 case "projects":
                     currentPage = 'projects';
@@ -115,6 +117,7 @@
                     about.style.left = "2.5%";
                     resume.style.left = "35%";
                     skills.style.left = "67.5%";
+                    titles[3].style.display = "none";
                     break;
                 default:
                     break;
@@ -133,9 +136,11 @@
             var arrayLength = buttonContainerArr.length;
             for (var i=0; i<arrayLength; i++) {
                 buttonContainerArr[i].style.display = "grid";
-                allContainers[i].style.animationDelay = "0s";            
+                allContainers[i].style.animationDelay = "0s";   
+                titles[i].style.display = "block";         
             }
             document.getElementById('back').style.display = 'none';
+            titles[0].style.display = "none";
         }
         document.getElementById( conatiner + 'Container').style.display = "grid";
     };
