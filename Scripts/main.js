@@ -136,11 +136,13 @@
             var arrayLength = buttonContainerArr.length;
             for (var i=0; i<arrayLength; i++) {
                 buttonContainerArr[i].style.display = "grid";
-                allContainers[i].style.animationDelay = "0s";   
-                titles[i].style.display = "block";         
+                allContainers[i].style.animationDelay = "0s";
+                titles[i].style.display = "block";   
+                if (allContainers[i].style.display === "flex") {
+                    titles[i].style.display = "none";         
+                }        
             }
             document.getElementById('back').style.display = 'none';
-            titles[0].style.display = "none";
         }
         document.getElementById( conatiner + 'Container').style.display = "grid";
     };
