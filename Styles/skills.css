@@ -39,7 +39,6 @@ ul::-webkit-scrollbar{
 }
 #skillsContent li{
     text-align: center;
-    background-color: #384f54;
     height: 100%;
     position: relative;
     z-index: 2;
@@ -111,7 +110,7 @@ ul::-webkit-scrollbar{
 }
 #skillsSubcontainer div ul li{
     text-align: left;
-    background-color: #384f54;
+    background-color: #727272c3;
     height: 100%;
     position: relative;
     z-index: 2;

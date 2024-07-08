@@ -17,16 +17,16 @@
     var skillsButton = document.getElementById("skillsButton");
     var projectsButton = document.getElementById("projectsButton");
 // Event Listeners
-    landingPage.addEventListener("click", function(){open('home')});
-    about.addEventListener("click", function(){show('about')});
-    resume.addEventListener("click", function(){show('resume')});
-    skills.addEventListener("click", function(){show('skills')});
-    projects.addEventListener("click", function(){show('projects')});
-    aboutButton.addEventListener("click", function(){open('about')});
-    resumeButton.addEventListener("click", function(){open('resume')});
-    skillsButton.addEventListener("click", function(){open('skills')});
-    projectsButton.addEventListener("click", function(){open('projects')});
-    document.getElementById('back').addEventListener("click", function(){open('home')});
+    landingPage.addEventListener("click", function(){open("home")});
+    about.addEventListener("click", function(){show("about")});
+    resume.addEventListener("click", function(){show("resume")});
+    skills.addEventListener("click", function(){show("skills")});
+    projects.addEventListener("click", function(){show("projects")});
+    aboutButton.addEventListener("click", function(){open("about")});
+    resumeButton.addEventListener("click", function(){open("resume")});
+    skillsButton.addEventListener("click", function(){open("skills")});
+    projectsButton.addEventListener("click", function(){open("projects")});
+    document.getElementById("back").addEventListener("click", function(){open("home")});
 // functions
     function show(conatiner){
         if (conatiner != currentPage) {
@@ -47,8 +47,8 @@
                 }
             // activate conatiner
             switch (conatiner) {
-                case 'about':
-                    currentPage = 'about';
+                case "about":
+                    currentPage = "about";
                     about.style.left = "0";
                     about.style.top = "0";
                     about.style.width = "100%";
@@ -65,8 +65,8 @@
                     projects.style.left = "67.5%";
                     titles[0].style.display = "none";
                     break;
-                case 'resume':
-                    currentPage = 'resume';
+                case "resume":
+                    currentPage = "resume";
                     resume.style.left = "0";
                     resume.style.top = "0";
                     resume.style.width = "100%";
@@ -84,7 +84,7 @@
                     titles[1].style.display = "none";
                     break;
                 case "skills":
-                    currentPage = 'skills';
+                    currentPage = "skills";
                     skills.style.left = "0";
                     skills.style.top = "0";
                     skills.style.width = "100%";
@@ -102,7 +102,7 @@
                     titles[2].style.display = "none";
                     break;
                 case "projects":
-                    currentPage = 'projects';
+                    currentPage = "projects";
                     projects.style.left = "0";
                     projects.style.top = "0";
                     projects.style.width = "100%";
@@ -125,24 +125,38 @@
         }
     };
     function open(conatiner){
-        document.getElementById('back').style.display = 'block';
-        var mainContainer = document.getElementsByClassName('mainContainer');
+        document.getElementById("back").style.display = "block";
+        var mainContainer = document.getElementsByClassName("mainContainer");
         var arrayLength = mainContainer.length;
         for (var i = 0; i < arrayLength; i++) {
             mainContainer[i].style.display = "none";
         }
-        if (conatiner == 'home'){
-            var buttonContainerArr = document.getElementsByClassName('buttonContainer');
+        if (conatiner == "home"){
+            var buttonContainerArr = document.getElementsByClassName("buttonContainer");
             var arrayLength = buttonContainerArr.length;
             for (var i=0; i<arrayLength; i++) {
                 buttonContainerArr[i].style.display = "grid";
                 allContainers[i].style.animationDelay = "0s";
-                titles[i].style.display = "block";   
-                if (allContainers[i].style.display === "flex") {
-                    titles[i].style.display = "none";         
-                }        
+                titles[i].style.display = "block";
+                console.log(currentPage)
             }
-            document.getElementById('back').style.display = 'none';
+            switch (currentPage) {
+                case "about":
+                    titles[0].style.display = "none";
+                    break;
+                case "resume":
+                    titles[1].style.display = "none";
+                    break;
+                case "skills":
+                    titles[2].style.display = "none";
+                    break;
+                case "projects":
+                    titles[3].style.display = "none";
+                    break;
+                default:
+                    break;
+            }  
+            document.getElementById("back").style.display = "none";
         }
-        document.getElementById( conatiner + 'Container').style.display = "grid";
+        document.getElementById( conatiner + "Container").style.display = "grid";
     };
