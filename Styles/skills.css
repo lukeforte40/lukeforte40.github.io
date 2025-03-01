@@ -116,6 +116,18 @@ ul::-webkit-scrollbar{
     z-index: 2;
 }
 /* Skills percent bars */
+#react{
+    width: 50%;
+}
+#flask{
+    width: 40%;
+}
+#django{
+    width: 40%;
+}
+#java{
+    width: 30%;
+}
 #javascript{
     width: 50%;
 }

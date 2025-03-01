@@ -181,6 +181,9 @@ nav{
     animation: titleAni 2s ease-in-out 0.75s forwards;
     text-align: center;
 }
+#projectLink{
+    color: black;
+}
 /* Media Queries */
 @media only screen and (min-width: 650px) and (max-width: 900px){
     .container h2{
